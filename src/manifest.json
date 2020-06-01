@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "SpacialChat-Icon",
+    "version": "1.0.0",
+    "desctiption": "Add an image to your icon on SpatialChat",
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "iamges/icon.png"
+    },
+    "permissions": [
+
+    ],
+    "icons": {
+
+    }
+}
