@@ -1,25 +1,33 @@
-@import "../node_modules/croppie/croppie.css";
+@import '../node_modules/croppie/croppie.css';
 
-#msg {
-  font-size: 18px;
-  text-align: center;
-  width: 200px;
-  border: 1px solid black;
-  padding: 50px;
-  box-sizing: border-box;
-  margin: 0 auto;
+#msg
+{
+    font-size: 18px;
+
+    box-sizing: border-box;
+    width: 200px;
+    margin: 0 auto;
+    padding: 50px;
+
+    text-align: center;
+
+    border: 1px solid black;
 }
 
-#container.ready #msg {
-  display: none;
+#container.ready #msg
+{
+    display: none;
 }
 
-.croppie-wrap {
-  display: none;
-  width: 300px;
-  height: 300px;
+.croppie-wrap
+{
+    display: none;
+
+    width: 300px;
+    height: 300px;
 }
 
-#container.ready .croppie-wrap {
-  display: block;
+#container.ready .croppie-wrap
+{
+    display: block;
 }
