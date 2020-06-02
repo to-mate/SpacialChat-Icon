@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="croppie.css">
+    <link rel="stylesheet" href="popup.css">
     <title>SpatialChat-Icon</title>
 </head>
 <body>
-    <div class="msg">
-        Upload a file to start cropping
+    <div id="container">
+        <div id="msg">
+            Upload a file to start cropping
+        </div>
+        <div class="croppie-wrap">
+            <div id="croppie"></div>
+        </div>
+        <a class="file-btn">
+            <span>Upload image</span>
+            <input id="upload" type="file" , accept="image/*">
+        </a>
+        <button id="setIcon" type="button">Set</button>
+        <script src="croppie.js"></script>
+        <script src="popup.js"></script>
+        </body>
     </div>
-    <div class="croppie-wrap">
-        <div id="croppie"></div>
-    </div>
-    <a class="file-btn">
-        <span>Upload image</span>
-        <input id="upload" type="file" , accept="image/*">
-    </a>
-    <button id="setIcon" type="button">Set</button>
-    <script src="croppie.js"></script>
-    <script src="popup.js"></script>
-</body>
 </html>
