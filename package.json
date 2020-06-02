@@ -15,6 +15,7 @@
     "@types/webpack": "^4.41.16",
     "copy-webpack-plugin": "^6.0.1",
     "css-loader": "^3.5.3",
+    "style-loader": "^1.2.1",
     "ts-loader": "^7.0.5",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.3",

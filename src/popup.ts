@@ -1,5 +1,5 @@
 import Croppie from "croppie"
-
+import "./popup.css"
 
 let uploadCrop: Croppie
 const imageArea = document.getElementById('croppie')
@@ -10,6 +10,10 @@ if (imageArea) {
       width: 100,
       height: 100,
       type: 'circle'
+    },
+    boundary: {
+      width: 300,
+      height: 300
     },
     enableExif: true
   })
@@ -36,6 +40,7 @@ setIconButton?.addEventListener('click', () => {
 const readFile = (input: HTMLInputElement) => {
   const reader = new FileReader();
   reader.onload = (e: Event) => {
+    document.getElementById('container')?.classList.add('ready')
     uploadCrop.bind({
       url: (<any>e).target?.result
     })
