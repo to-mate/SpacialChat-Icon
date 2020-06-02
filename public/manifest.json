@@ -2,21 +2,23 @@
     "manifest_version": 2,
     "name": "SpacialChat-Icon",
     "version": "1.0.0",
-    "desctiption": "Add an image to your icon on SpatialChat",
-    "content_scripts": {
-        "matches": ["https://spatial.chat/*"],
-        "js": ["content.js"]
-    },
+    "description": "Add an image to your icon on SpatialChat",
+    "content_scripts": [
+        {
+            "matches": ["https://spatial.chat/*"],
+            "js": ["content.js"]
+        }
+    ],
     "page_action": {
-        "default_popup": "popup.html",
-        "default_icon": "images/icon.png"
+        "default_popup": "popup.html"
     },
     "background": {
         "scripts": ["background.js"],
         "persistent": false
     },
     "permissions": [
-
+        "declarativeContent",
+        "activeTag"
     ],
     "icons": {
 
