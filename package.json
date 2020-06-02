@@ -6,7 +6,9 @@
   "repository": "https://github.com/Taisei-NE30/SpacialChat-Icon",
   "author": "Taisei-NE30",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "croppie": "^2.6.4"
+  },
   "devDependencies": {
     "@types/copy-webpack-plugin": "^6.0.0",
     "@types/webpack": "^4.41.16",
