@@ -18,7 +18,7 @@
     },
     "permissions": [
         "declarativeContent",
-        "activeTag"
+        "activeTab"
     ],
     "icons": {
 
